@@ -1,0 +1,466 @@
+.order-progress-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* Header Styles */
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #eaeaea;
+  margin-bottom: 32px;
+}
+
+.order-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 8px 0;
+}
+
+.order-id {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+.order-id span {
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.order-summary {
+  display: flex;
+  gap: 32px;
+}
+
+.total-amount, .order-date {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.amount-label, .date-label {
+  font-size: 12px;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+.amount-value {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.date-value {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+/* Progress Section */
+.progress-section {
+  margin-bottom: 40px;
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.progress-header h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.current-status {
+  color: #10b981;
+  font-weight: 700;
+}
+
+.progress-percentage {
+  font-size: 14px;
+  font-weight: 600;
+  color: #666;
+  padding: 6px 12px;
+  background: #f8f9fa;
+  border-radius: 20px;
+}
+
+.progress-bar-container {
+  position: relative;
+  height: 8px;
+}
+
+.progress-bar-bg {
+  position: relative;
+  height: 100%;
+  background: #eaeaea;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  position: absolute;
+  height: 100%;
+  background: linear-gradient(90deg, #10b981 0%, #3b82f6 100%);
+  border-radius: 4px;
+  transition: width 0.5s ease;
+}
+
+.progress-marker {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.marker-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: white;
+  border: 2px solid #eaeaea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  color: #999;
+  transition: all 0.3s ease;
+}
+
+.active-marker .marker-dot {
+  border-color: #10b981;
+  background: #10b981;
+  color: white;
+}
+
+.active-dot {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Timeline Styles */
+.timeline-container {
+  position: relative;
+  padding: 20px 0;
+  margin-bottom: 32px;
+}
+
+.timeline-step {
+  display: flex;
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.timeline-step:last-child {
+  margin-bottom: 0;
+}
+
+.step-indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 16px;
+  position: relative;
+}
+
+.step-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #f8f9fa;
+  border: 2px solid #eaeaea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #999;
+  z-index: 2;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.completed .step-icon {
+  background: #10b981;
+  border-color: #10b981;
+  color: white;
+}
+
+.current .step-icon {
+  background: white;
+  border-color: #3b82f6;
+  color: #3b82f6;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
+}
+
+.step-connector {
+  position: absolute;
+  top: 40px;
+  bottom: -32px;
+  width: 2px;
+  background: #eaeaea;
+  z-index: 1;
+}
+
+.timeline-step:last-child .step-connector {
+  display: none;
+}
+
+.completed .step-connector {
+  background: #10b981;
+}
+
+.step-content {
+  flex: 1;
+  padding-top: 4px;
+}
+
+.step-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.step-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.current-badge, .completed-badge {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 12px;
+}
+
+.current-badge {
+  background: rgba(59, 130, 246, 0.1);
+  color: #3b82f6;
+}
+
+.completed-badge {
+  background: rgba(16, 185, 129, 0.1);
+  color: #10b981;
+}
+
+.step-description {
+  font-size: 14px;
+  color: #666;
+  margin: 0 0 8px 0;
+}
+
+.step-eta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #666;
+  padding: 4px 8px;
+  background: #f8f9fa;
+  border-radius: 6px;
+}
+
+.eta-icon {
+  font-size: 12px;
+}
+
+/* Delivery Card */
+.delivery-card {
+  background: linear-gradient(135deg, #f8f9fa 0%, #f1f5f9 100%);
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid #eaeaea;
+  margin-bottom: 24px;
+}
+
+.delivery-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.delivery-icon {
+  font-size: 32px;
+}
+
+.delivery-header h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0 0 4px 0;
+}
+
+.delivery-header p {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+.delivery-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delivery-date {
+  display: flex;
+  flex-direction: column;
+}
+
+.delivery-date .date-label {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+.delivery-date .date-value {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.delivery-progress {
+  width: 200px;
+}
+
+.progress-stats {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.mini-progress-bar {
+  height: 6px;
+  background: #eaeaea;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.mini-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #10b981 0%, #3b82f6 100%);
+  border-radius: 3px;
+  transition: width 0.5s ease;
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  gap: 12px;
+  padding-top: 24px;
+  border-top: 1px solid #eaeaea;
+}
+
+.view-details-btn, .help-btn {
+  flex: 1;
+  padding: 14px 24px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+}
+
+.view-details-btn {
+  background: #1a1a1a;
+  color: white;
+}
+
+.view-details-btn:hover {
+  background: #333;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.help-btn {
+  background: white;
+  color: #1a1a1a;
+  border: 2px solid #eaeaea;
+}
+
+.help-btn:hover {
+  background: #f8f9fa;
+  border-color: #d1d5db;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .order-progress-container {
+    padding: 16px;
+    margin: 16px;
+  }
+  
+  .order-header {
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .order-summary {
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .total-amount, .order-date {
+    align-items: flex-start;
+  }
+  
+  .delivery-info {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  
+  .delivery-progress {
+    width: 100%;
+  }
+  
+  .action-buttons {
+    flex-direction: column;
+  }
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.timeline-step {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.timeline-step:nth-child(1) { animation-delay: 0.1s; }
+.timeline-step:nth-child(2) { animation-delay: 0.2s; }
+.timeline-step:nth-child(3) { animation-delay: 0.3s; }
+.timeline-step:nth-child(4) { animation-delay: 0.4s; }
+.timeline-step:nth-child(5) { animation-delay: 0.5s; }

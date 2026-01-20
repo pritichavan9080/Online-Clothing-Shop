@@ -1,0 +1,43 @@
+.category-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.product-count {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.category-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.sort-by label {
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+.sort-by select {
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+.filter-btn {
+  padding: 6px 15px;
+  font-size: 14px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.filter-btn:hover {
+  background-color: #555;
+}

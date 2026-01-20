@@ -1,0 +1,99 @@
+/* AdminAddProduct.css */
+.add-product-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+}
+/* Form container */
+form {
+  max-width: 500px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-family: Arial, sans-serif;
+}
+
+/* Input and textarea styling */
+form input[type="text"],
+form input[type="file"],
+form textarea,
+form select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Textarea */
+form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* Button styling */
+form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+/* Labels and dropdown */
+form select {
+  cursor: pointer;
+}
+
+/* Optional: form heading */
+form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+.size-wrapper {
+  margin-bottom: 15px;
+}
+
+
+
+.size-container {
+  display: flex;
+  gap: 10px;
+}
+
+
+
+.size-btn {
+  padding: 8px 18px;
+  border: 1px solid #007bff;
+  background: white;
+  color: #007bff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.size-btn.active {
+  background: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+form textarea {
+  resize: vertical;
+  min-height: 80px;
+}

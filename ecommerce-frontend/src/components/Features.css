@@ -1,0 +1,36 @@
+.features-section {
+  padding: 40px 0;
+  background-color: #fff;
+}
+
+.features-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 70px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.feature {
+  max-width: 180px;
+}
+
+.feature-icon {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.feature h3 {
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+
+.feature p {
+  font-size: 13px;
+  color: #555;
+  line-height: 1.4;
+}

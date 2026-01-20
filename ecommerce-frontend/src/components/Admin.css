@@ -1,0 +1,40 @@
+.sidebar-btn {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 12px;
+  background: hsl(210, 7%, 94%);
+  color: #140303;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: left;
+  
+  font-size: 18px;     /* 🔥 font मोठा */
+  font-weight: 800;
+  display: flex;       /* icon + text */
+  align-items: center;
+  gap: 20px;
+}
+
+.sidebar-btn:hover {
+  background: #4b5563;
+}
+
+.sidebar-btn .icon {
+  font-size: 20px;
+}
+
+/* Active menu */
+.sidebar-btn.active {
+  background: #facc15;
+  color: #111827;
+}
+
+/* Logout */
+.logout {
+  background: hsl(8, 90%, 47%);
+}
+
+.logout:hover {
+  background: #b91c1c;
+}

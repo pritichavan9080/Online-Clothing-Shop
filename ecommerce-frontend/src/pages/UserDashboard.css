@@ -1,0 +1,31 @@
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.cart-details {
+  flex: 1;
+}
+
+.remove-btn {
+  background: red;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.product-image {
+  transition: transform 0.3s ease;
+}
+.product-image:hover {
+  transform: scale(1.5);
+}
+.zoomed {
+  transform: scale(2);
+  transition: transform 0.3s ease;
+}

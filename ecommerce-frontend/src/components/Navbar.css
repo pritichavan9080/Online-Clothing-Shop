@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  background: #d5cbb2;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  font-style: bold;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+
+/* Logo */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.logo-icon {
+  color: #d43617;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.logo-text {
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+/* Menu */
+.navbar-menu {
+  display: flex;
+  gap: 24px;
+}
+
+.navbar-menu a {
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #000;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar-menu a:hover {
+  color: hwb(254 2% 57%);
+}
+
+.highlight {
+  font-weight: bold;
+}
+
+/* Icons */
+.navbar-icons {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.icon {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.currency {
+  border: 1px solid #d4a017;
+  padding: 6px 10px;
+  border-radius: 6px;
+  background: transparent;
+  cursor: pointer;
+}
+.navbar-menu {
+  display: flex;
+  gap: 28px;
+}
+
+.nav-item {
+  position: relative;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  padding-bottom: 8px;
+  cursor: pointer;
+}
+
+/* underline effect */
+.nav-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #c9a14a; /* gold */
+  transition: width 0.3s ease;
+}
+
+/* hover */
+.nav-item:hover::after {
+  width: 100%;
+}
+
+/* active page */
+.nav-item.active::after {
+  width: 100%;
+}
+.home-icon {
+  font-size: 35px;
+  margin-right: 6px;
+}
+/* Search input styling */
+.search-form {
+  display: inline-block;
+  position: relative;
+  margin-left: 8px;
+}
+
+.search-form input {
+  padding: 4px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
