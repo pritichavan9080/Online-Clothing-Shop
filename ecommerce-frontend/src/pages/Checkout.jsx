@@ -151,7 +151,7 @@ const Checkout = () => {
               <div className="upi-qr">
                 <h4>Scan to Pay via UPI</h4>
                 <QRCodeCanvas
-                  value={`upi://pay?pa=pritichavan9080@okicici&pn=ByShreeRAM&am=${totalPrice}&cu=INR`}
+                  {/* value={`upi://pay?pa=pritichavan9080@okicici&pn=ByShreeRAM&am=${totalPrice}&cu=INR`} */}
                   size={220}
                 />
                 <p>Amount: ₹{totalPrice}</p>
