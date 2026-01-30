@@ -10,7 +10,7 @@ const Checkout = () => {
   const [email, setEmail] = useState("");
   const [address, setAddress] = useState("");
   const [paymentMethod, setPaymentMethod] = useState("cod");
-  const [showQR, setShowQR] = useState(false);
+  
 
   const navigate = useNavigate();
 
