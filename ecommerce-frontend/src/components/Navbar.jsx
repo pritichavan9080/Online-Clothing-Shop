@@ -67,27 +67,7 @@ export default function Navbar() {
           Login
         </span>
 
-        {/* Search Icon */}
-        {/* <span
-          className="icon"
-          title="Search"
-          onClick={() => setShowSearch(!showSearch)}
-        >
-          🔍
-        </span>
-
-        {showSearch && (
-          <form className="search-form" onSubmit={handleSearchSubmit}>
-            <input
-              type="text"
-              placeholder="Search products..."
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              autoFocus
-            />
-          </form>
-        )} */}
-
+       
         <span className="icon" onClick={() => navigate("/cart")} title="Cart">
 
           🛒
