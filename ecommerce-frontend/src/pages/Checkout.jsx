@@ -138,7 +138,7 @@ const Checkout = () => {
               value={paymentMethod}
               onChange={(e) => {
                 setPaymentMethod(e.target.value);
-                setShowQR(e.target.value === "upi");
+                
               }}
             >
               <option value="cod">Cash on Delivery</option>
