@@ -23,7 +23,7 @@ export default function Navbar() {
     if (searchQuery.trim() !== "") {
       navigate(`/search?query=${encodeURIComponent(searchQuery)}`);
       setSearchQuery("");
-      setShowSearch(false);
+      
     }
   };
 
