@@ -5,7 +5,7 @@ import "./Navbar.css";
 
 export default function Navbar() {
   const navigate = useNavigate();
-  const [showSearch, setShowSearch] = useState(false);
+  
   const [searchQuery, setSearchQuery] = useState("");
 
   const categories = [
